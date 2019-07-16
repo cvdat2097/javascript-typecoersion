@@ -4,7 +4,7 @@ const cookieParser = require('cookie-parser');
 
 const app = express();
 
-const TypeCoersionAPI = require('./routes/type-coersion');
+const TypeCoersionAPI = require('./core/type-coersion/routes');
 
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
